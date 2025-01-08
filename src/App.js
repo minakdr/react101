@@ -1,27 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import MyHeader from './Header';
+import MainContent from './MainContent';
+import Footer from './Footer';
 
-function App() {
-  return (
-    <div className="App">
-<main>
+/*import { Fragment } from "react" instead od using this with the <Fragment> we can just use <>*/ 
 
-<header>
-<header>
-  <img src={logo} width="40px" alt="React logo" />
-</header>
-            </header>
-                <h1>Reason I am excited to learn React</h1>
-                <ol>
-                    <li>React is a popular library, so I will be able to fit in with all the coolest devs out there! 😎</li>
-                    <li>I am more likely to get a job as a front end developer if I know React</li>
-                </ol>
-            </main>
-            <footer>
-                <small>© 2024 Mina development. All rights reserved.</small>
-            </footer>
-        </div>
-  );
+
+
+function Page() {
+    return (
+        <>
+            <MyHeader />
+            <MainContent />
+            <Footer />  
+            
+        </>
+    )
 }
 
-export default App;
+export default Page ;
